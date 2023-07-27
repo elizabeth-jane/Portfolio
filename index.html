@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+   <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/2fe5bbb697.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -44,7 +45,7 @@
         <div class="about-col-2">
             <h1 class="sub-title">ABOUT ME</h1>
             <p>I'm a front-end web developer with a strong love for crafting beautiful and intuitive user experiences. With a background in HTML, CSS, and JavaScript, I bring creativity, precision, and attention to detail to every project I work on. I am constantly exploring the latest web technologies and trends to ensure that my work stays modern and up-to-date. <br> <br>My goal is to build websites and web applications that not only look stunning but also deliver seamless functionality across all devices and platforms. Feel free to explore my portfolio to see some of the projects I've worked on. If you're interested in collaborating or have any questions, don't hesitate to get in touch. Looking forward to creating remarkable web experiences together!</p>
-            <a href="" download class="btn">Download Resume</a>
+            <a href="" download class="btn">Download CV</a>
         </div>
         </div>
         
@@ -92,7 +93,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/ecommerce2.png" >
+                <img src="images/ecommerce.png" >
                 <div class="layer">
                     <h3>E-Commerce Website</h3>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -155,73 +156,6 @@
                     <p>&copy; 2023 elizabeth-jane <i class="fa-solid fa-heart"></i>. All rights reserved.</p>
                 </div>
             </div>
-<script>
-    var tablinks= document.getElementsByClassName("tab-links");
-    var tabcontents= document.getElementsByClassName("tab-contents");
-
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
-
-
-
-</script>
-
-<script>
-    const sidemenu= document.getElementById("sidemenu");
-    
-    function openmenu(){
-        sidemenu.style.right= "0";
-    }
-    function closemenu(){
-        sidemenu.style.right= "-200px";
-    }
-    
-    </script>
-    
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxI_A-Y1A8Nbp8DbDpmvmIhFEzoJsSVAFSqasLWY0GURJYZ5NVh_j-fH2qvjVbMKEWF/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully!"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      
-      </script>
-      <script>
-        const observer = new IntersectionObserver((entries) =>{
-            entries.forEach((entry) => {
-                console.log(entry)
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                } else {
-                    entry.target.classList.remove('show');
-                }
-            });
-        });
-
-        const hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach((el) => observer.observe(el));
-
-
-      </script>
     
 </body>
 </html>
