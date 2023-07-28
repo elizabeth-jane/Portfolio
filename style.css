@@ -228,6 +228,9 @@ transform: scale(1.1);
 .contact-right{
     flex-basis: 60%;
 }
+.contact-right p{
+    text-align: right;
+}
 .contact-left p{
     margin-top: 30px;
 

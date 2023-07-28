@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+   <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/2fe5bbb697.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script:wght@700&family=Kaushan+Script&family=Lilita+One&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <section>
     <div id="header">
         <div class="container">
             <nav>
-               <h3 class="logo">elizabeth-jane</h3>
+               <h3 class="logo">EJ</h3>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-x" onclick="closemenu()"></i>
                 </ul>
@@ -32,8 +33,9 @@
             </div>
         </div>
     </div>
- 
+</section>
     <!-- about -->
+    <section class="hidden">
 <div id="about">
 <div class="container">
     <div class="row">
@@ -43,13 +45,15 @@
         <div class="about-col-2">
             <h1 class="sub-title">ABOUT ME</h1>
             <p>I'm a front-end web developer with a strong love for crafting beautiful and intuitive user experiences. With a background in HTML, CSS, and JavaScript, I bring creativity, precision, and attention to detail to every project I work on. I am constantly exploring the latest web technologies and trends to ensure that my work stays modern and up-to-date. <br> <br>My goal is to build websites and web applications that not only look stunning but also deliver seamless functionality across all devices and platforms. Feel free to explore my portfolio to see some of the projects I've worked on. If you're interested in collaborating or have any questions, don't hesitate to get in touch. Looking forward to creating remarkable web experiences together!</p>
-
+            <a href="images/my-cv.pdf" download class="btn">Download Resume</a>
         </div>
         </div>
-
+        
 </div>
-
+</div>
+</section>
 <!-- services -->
+<section class="hidden">
 <div id="services">
     <div class="container">
         <div class="sub-title">My Services</div>
@@ -58,84 +62,82 @@
                 <i class="fa-solid fa-code"></i>
                 <h2>RESPONSIVE WEB DEVELOPMENT</h2>
                 <p>I specialize in crafting responsive websites that look stunning and function flawlessly on all devices, including desktops, tablets, and smartphones. By using the latest front-end technologies and responsive design principles, I ensure that the user experience remains consistent and engaging, no matter the screen size.</p>
-                <a href="#">learn more</a>
+               
             </div>
             <div>
                 <i class="fa-sharp fa-solid fa-crop-simple"></i>
                 <h2>INTERACTIVE USER INTERFACE DESIGN</h2>
                 <p> I have a keen eye for UI design and enjoy creating interactive and intuitive user interfaces. By combining my front-end development skills with UI design principles, I can turn your vision into a visually appealing and user-friendly interface that enhances your website's overall usability and captivates your audience.</p>
-                <a href="#">learn more</a>
+                
             </div>
             <div>
           <i class="fa-solid fa-bolt"></i>
                 <h2>PERFORMANCE OPTIMIZATION</h2>
                 <p> I am dedicated to delivering high-performing websites that load quickly and efficiently. Through various optimization techniques, such as optimizing code, compressing assets, and leveraging caching mechanisms, I ensure that your website achieves optimal speed and performance, providing visitors with a seamless browsing experience.</p>
-                <a href="#">learn more</a>
+             
             </div>
-          
         </div>
-    </div>
-</div>
-
+        </div>
+    </section>
 <!-- portfolio -->
-
+<section class="hidden">
 <div id="portfolio">
     <div class="container">
         <div class="sub-title">My Work</div>
         <div class="work-list">
             <div class="work">
-                <img src="images/salon (1).png" >
+                <img src="images/salon2.png" >
                 <div class="layer">
-                    <h3>E-Commerce Website</h3>
-                    <p>Some explanation of what an e-commerce wesite is</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Professional Business Website</h3>
+                    <a href="https://salon-template-iota.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/ecommerce.png" >
+                <img src="images/ecommerce2.png" >
                 <div class="layer">
                     <h3>E-Commerce Website</h3>
-                    <p>Some explanation of what an e-commerce wesite is</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://online-store-orpin-two.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/porfolio.png" >
                 <div class="layer">
-                    <h3>E-Commerce Website</h3>
-                    <p>Some explanation of what an e-commerce wesite is</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Portfolio Website</h3>
+                    <a href="https://portfolio-vert-six-79.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
         
-                <a href="#" class="btn"> See more</a>
+                <a href="https://github.com/elizabeth-jane" class="btn"> See more</a>
 
 
 
             </div>
           
         </div>
-
+    </section>
         <!-- contact -->
+        <section class="hidden">
         <div id="contact">
             <div class="container">
                 <div class ="row">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@gmail.com</p>
-                        <p><i class="fa-solid fa-phone-volume"></i>234707240</p>
+                        <p><i class="fas fa-envelope"></i>enyinnaelizabethjane@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>+234 704 290 7240</p>
                         <div class="social-icons">
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://twitter.com/__ejayy__"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/chidinma-enyinna-69b5b0232/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/elizabeth-jane"><i class="fab fa-github"></i></a>
+                            <a href="https://wa.me/2347042907240"><i class="fa-brands fa-whatsapp"></i></i></a>
+
                         </div>
-                        <a href="" download class="btn btn2">Download CV</a>
+                        
                     </div>
                     <div class="contact-right">
+                        <p>Leave a message :)</p>
                         <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>git
+                            <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Messaage"></textarea>
                           <button type="submit" class="btn btn2">Submit</button>
@@ -145,14 +147,15 @@
                 </div>
                 
             </div>
-            <!-- copright -->
+        </div>
+    </section>
+            <!-- copyright -->
 
             <div id="footer">
                 <div class="copyright">
-                    <p>Copyright @ Jane <i class="fa-solid fa-heart"></i></p>
+                    <p>&copy; 2023 elizabeth-jane <i class="fa-solid fa-heart"></i>. All rights reserved.</p>
                 </div>
             </div>
-
     
 </body>
 </html>
